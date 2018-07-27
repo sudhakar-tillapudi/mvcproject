@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MyChat - Home</title>
+<meta name="generator" content="Bootply" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <link rel="stylesheet" href="./css/pace-theme-minimal.css">
+  <link rel="stylesheet" href="./css/theme.min.css">
+</head>
+
+<body class="bg">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container-fluid" style="vertical-align: middle">
+
+        <section class="section" id="home-search-section">
+            <div class="container-fluid">
+        
+              
+        
+              <div class="row search-bar-row search-by-ymm-row">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="well search-bar">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h1>Buy Used Auto Parts Online Instantly</h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="composite-field-container wrapper-year-search border-anim">
+                          <div class="field-title">Select Year</div>
+                            <select class="form-control field composite-input composite-field-filled" id="year-search-field">
+                              <option>sss</option>
+>sss</option>
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-3">
+                        <div class="composite-field-container wrapper-make-search">
+                          <div class="field-title">Select Make</div>
+                            <div class="input-group disabled">
+                              <input type="text" placeholder="e.g. Toyota" class="form-control field" placeholder="e.g. Toyota" disabled>
+                              <span class="input-group-addon dropdown-toggle fake" data-dropdown="dropdown">
+                                <span class="caret"></span>
+                              </span>
+                            </div>
+        
+                            <select class="form-control field hidden composite-input" id="make-search-field">
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-3">
+                        <div class="composite-field-container wrapper-model-search">
+                          <div class="field-title">Select Model</div>
+                            <div class="input-group disabled">
+                              <input type="text" placeholder="e.g. Corolla" class="form-control field" placeholder="e.g. Corolla" disabled>
+                              <span class="input-group-addon dropdown-toggle fake" data-dropdown="dropdown">
+                                <span class="caret"></span>
+                              </span>
+                            </div>
+        
+                            <select class="form-control field hidden composite-input" id="model-search-field">
+                            </select>
+                          </div>
+                        </div>
+                      <div class="col-md-3">
+                        <button id="search-button" class="btn btn-primary search-by-ymm-button find-parts-button">Find Parts</button>
+                      </div>
+                    </div>
+                    <div class="row alternate-search-links-row">
+                      <div class="col-md-12">
+                        <span class="search-by-part-link">SEARCH BY PART NUMBER</span>
+                        <span class="search-by-vin-link">SEARCH BY VIN</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row search-bar-row search-by-vin-row" style="display: none;">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="well search-bar">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h1>Buy Used Auto Parts Online Instantly</h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="composite-field-container">
+                          <div class="field-title">Enter Your VIN</div>
+                          <input type="text" class="form-control field composite-input" id="vin-number-search-field" placeholder="e.g. 1HGBH41JXMN109186" maxlength="17">
+                        </div>
+                        <div class="message-container vin-decoding hidden">
+                          <i class="fa fa-circle-o-notch fa-spin"></i>
+                          <span class="sr-only">Loading...</span>
+                          Decoding VIN
+                        </div>
+                        <div class="message-container vin-results hidden"></div>
+                        <div class="message-container vin-not-found-message hidden">We couldn't find a match for that VIN. Please select your car's Year, Make, and Model</div>
+                        <div class="message-container vin-error-message hidden">Your VIN is invalid. Please check your entry or select your car's Year, Make, and Model</div>
+                      </div>
+                      <div class="col-md-3">
+                        <button id="" class="btn btn-primary search-by-vin-button find-parts-button">Find Parts</button>
+                      </div>
+                    </div>
+                    <div class="row alternate-search-links-row">
+                      <div class="col-md-12">
+                        <span class="search-by-ymm-link">SEARCH BY YEAR | MAKE | MODEL</span>
+                        <span class="search-by-part-link">SEARCH BY PART NUMBER</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row search-bar-row search-by-part-row" style="display: none;">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="well search-bar">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h1>Buy Used Auto Parts Online Instantly</h1>
+                      </div>
+                    </div>
+        
+                    <form action="/partnumber?" method="POST">
+                        <div style="display:none;"><input id="csrf_token" name="csrf_token" type="hidden" value="1532659906##e5079811ad4f6177be2c40d7cf870e42d8d7323f"></div>
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="composite-field-container">
+                              <div class="field-title">Enter Your Part Number</div>
+                              <input class="form-control field composite-input" id="part-number-search-field" name="search" placeholder="e.g. MR953165" type="text" value="">
+                            </div>
+                            <div class="message-container partnumber-decoding hidden">
+                              <i class="fa fa-circle-o-notch fa-spin"></i>
+                              <span class="sr-only">Loading...</span>
+                              Searching Part Number
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <input class="btn btn-primary search-by-part-button find-parts-button" id="submit" name="submit" type="submit" value="Search">
+                          </div>
+                        </div>
+                    </form>
+        
+                    <div class="row alternate-search-links-row">
+                      <div class="col-md-12">
+                        <span class="search-by-ymm-link">SEARCH BY YEAR | MAKE | MODEL</span>
+                        <span class="search-by-vin-link">SEARCH BY VIN</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+</body>
